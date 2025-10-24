@@ -41,10 +41,9 @@ public class HospitalManagmentSystem {
                     break;
                     case 4: bookAppointment(patient, doctor, connection,scanner);
                     break;
-                    case 5:
-                System.out.println("***************************");
-                System.out.println("     HAVE A NICE TIME");
-                System.out.println("***************************");
+                    case 5: exit();
+                        System.out.println("     HAVE A NICE TIME");
+                        System.out.println("***************************");
                     return ;
                     default:
                         System.out.println("Enter valid choice !!!");
@@ -104,4 +103,31 @@ public class HospitalManagmentSystem {
         }
         return false;
     }
+    public static void exit(){
+       try {
+           for (int i = 5; i > 0; i--){
+               System.out.println(i);
+               Thread.sleep(1000);
+           }
+
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
+    }
+    public static void exit(Connection connection) {
+        try {
+
+
+            for (int i = 4; i > 0; i--) {
+                System.out.println(i + "...");
+                Thread.sleep(1000);
+
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
